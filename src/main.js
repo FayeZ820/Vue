@@ -2,11 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
+import TreeTable from 'vue-table-with-tree-grid'
 import './assets/css/global.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import {
   Button, Form, FormItem, Input, Message, Container, Main, Aside, Header, Menu, Submenu,
-  MenuItem, Breadcrumb, BreadcrumbItem, Card, Table, TableColumn, Row, Col, Pagination, Switch, Tooltip, Dialog, MessageBox, Tag, Tree, Select, Option
+  MenuItem, Breadcrumb, BreadcrumbItem, Card, Table, TableColumn, Row, Col, Pagination, Switch, Tooltip, Dialog, MessageBox, Tag, Tree, Select, Option, Cascader
 } from 'element-ui'
 
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -15,6 +16,8 @@ axios.interceptors.request.use(config => {
   return config
 })
 Vue.prototype.$http = axios
+
+Vue.component('tree-table', TreeTable)
 
 Vue.use(Button)
 Vue.use(Form)
@@ -42,6 +45,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 
