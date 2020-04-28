@@ -7,7 +7,7 @@ import './assets/css/global.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import {
   Button, Form, FormItem, Input, Message, Container, Main, Aside, Header, Menu, Submenu,
-  MenuItem, Breadcrumb, BreadcrumbItem, Card, Table, TableColumn, Row, Col, Pagination, Switch, Tooltip, Dialog, MessageBox, Tag, Tree, Select, Option, Cascader
+  MenuItem, Breadcrumb, BreadcrumbItem, Card, Table, TableColumn, Row, Col, Pagination, Switch, Tooltip, Dialog, MessageBox, Tag, Tree, Select, Option, Cascader, Alert, Tabs, TabPane
 } from 'element-ui'
 
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -46,6 +46,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 
