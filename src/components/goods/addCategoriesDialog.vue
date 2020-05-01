@@ -19,7 +19,7 @@
           <el-cascader
             v-model="selectedKeys"
             :options="parentCategoriesList"
-            :props="{ expandTrigger: 'hover', value: 'cat_id', label: 'cat_name', children: 'children', checkStrictly: true }"
+            :props="{ expandTrigger: 'hover', value: 'cat_id', label: 'cat_name', children: 'children' }"
             @change="parentCategoriesChanged"
             clearable
           ></el-cascader>
