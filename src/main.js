@@ -13,7 +13,7 @@ import {
   Button, Form, FormItem, Input, Message, Container, Main, Aside, Header, Menu, Submenu,
   MenuItem, Breadcrumb, BreadcrumbItem, Card, Table, TableColumn, Row, Col, Pagination,
   Switch, Tooltip, Dialog, MessageBox, Tag, Tree, Select, Option, Cascader, Alert, Tabs,
-  TabPane, Step, Steps, Checkbox, CheckboxGroup, Upload
+  TabPane, Step, Steps, Checkbox, CheckboxGroup, Upload, Timeline, TimelineItem
 } from 'element-ui'
 
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -61,6 +61,8 @@ Vue.use(Steps)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 
